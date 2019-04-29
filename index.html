@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <style>
+      body{background-color: grey;}
+      div{width: 1000px; background-color: white; margin: 0 auto; border-radius: 20px; padding-top: 80px; padding-bottom: 80px}
+      h1{text-align: center;}
+      h2{margin: 80px;}
+      p{text-align: justify; margin: 80px;}
+      img{display: block; margin-left: auto; margin-right: auto;}
+      iframe{display: block; margin-left: auto; margin-right: auto;}
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Seminario 07MBIG </h1>
+      <p>
+        Nombre: Benjamín Villarroya<br>
+        Url: <a href="https://js-jxjs3h.stackblitz.io">https://js-jxjs3h.stackblitz.io</a><br>
+        GitHub: <a href="https://github.com/Benvial89/07MBIG---Visualizacion-de-datos.git">https://github.com/Benvial89/07MBIG---Visualizacion-de-datos.git</a><br><br>
+      </p>
+      <h2>Introducción</h2>
+      <p>
+        Para la realización de la actividad propuesta en los seminarios de la asignatura de visualización de datos, se ha utilizado una base de datos del portal Kaggle. Dicha base de datos representa las ventas de más de 100.000 videojuegos y se ha obtenido del siguiente enlace:<br><br>
+        
+        <a href="https://www.kaggle.com/gregorut/videogamesales#vgsales.csv">https://www.kaggle.com/gregorut/videogamesales#vgsales.csv</a><br><br>
+      
+        El principal destinatario de la presentación podrían ser pequeños estudios que no tengan recursos para tener un área analítica y que necesiten de una orientación sobre la situación del sector de los videojuegos, ya que esto les ayudaría a la hora de plantear el desarrollo de un nuevo título. De esta forma, podrían escoger qué género y las plataformas sobre las que se podrá ejecutar dicho software.<br><br>
+        El objetivo de realizar esta representación es obtener un conocimiento del sector y comprobar qué videojuegos venden mejor en cada mercado. Como consumidor de estos productos, me gustaría saber si mis gustos siguen las tendencias marcadas por mi región. Sin embargo, el objetivo de la audiencia de la presentación será una respuesta de qué tipos de videojuegos se están vendiendo mejor en los últimos años, para así tener un conocimiento útil a la hora de orientar sus futuros proyectos y que estos resulten ser una apuesta más segura.
+      </p>
+
+      <h2>Tipos de gráficos utilizados</h2>
+
+      <p>
+        He utilizado las herramientas basadas en Python, Seaborn y Matplotlib, ya que pese a ser más complicadas de dominar, ofrecen un tratamiento de los datos más robusto y potente. Por otra parte, he usado GoogleSheets para representar de forma sencilla y con un mayor dinamismo algunas relaciones entre los datos, porque ofrecen la posibilidad de compartirlas.<br><br>
+        Respecto a los tipos de gráficos, he escogido los de barras debido a que estos son muy precisos para mostrar cantidades y la diferencia entre los mismos, además de ser efectivos a la hora de mostrar la evolución en el tiempo de ventas. <br><br>
+        También he implementado gráficos de tarta junto a gráficos de barras apiladas para mostrar porcentajes, puesto que con ellos es fácil ver la proporción.<br><br>
+        Por último, he empleado gráficos de burbujas para ver la relación entre el número de títulos publicados y el volumen de ventas, que permiten ver de una forma más clara detalles que no se podrían apreciar con los otros tipos de gráficos.
+      </p>
+
+      <h2>Distribución de los géneros según la plataforma</h2>
+
+      <p>
+        Los lanzamientos de videojuegos vienen condicionados por la plataforma en la que se ejecutarán (PS4, Xbox One, WiiU, PC...), siendo un aspecto muy importante la elección de si son exclusivos de una de ellas o si son un lanzamiento multiplataforma.<br><br>
+        Un videojuego exclusivo de una plataforma puede aprovechar mucho mejor las virtudes de su hardware, e incluso si se tiene un contrato con la empresa matriz, se puede financiar parte de la producción. Por otra parte, a un lanzamiento multiplataforma le sería más fácil alcanzar mayores ventas debido a que gozaría de un número mayor de consumidores.<br><br>
+        Dicho esto, los gráficos que se muestran a continuación analizan el porcentaje correspondiente a cada género de videojuego en función de las distintas plataformas durante los últimos 10 años:<br><br>
+      </p>
+
+      <a href="https://ibb.co/wcWX9rh"><img src="https://i.ibb.co/PDhn7zG/Number-of-games-per-Platform.png" alt="Number-of-games-per-Platform" border="0" /></a>
+
+      <p>
+        Como se aprecia en la imagen, se puede observar qué géneros predominan en cada una de las plataformas y cuáles tienen una incidencia menor, ofreciendo una orientación respecto a qué tipo de videojuego podría ser el adecuado para cada una. <br><br> Además de las plataformas dedicadas a los videojuegos está el PC, que sigue una tendencia diferente. Como se puede observar a continuación, el género que predomina es el de estrategia, que en las demás plataformas apenas tiene catálogo:<br><br>
+      </p>
+
+      <a href="https://ibb.co/9v8NGsP"><img src="https://i.ibb.co/3sr7kBK/PC.png" alt="PC" border="0" /></a>
+
+      <p>
+        Por norma general, los juegos que mejor funcionan son los de acción, deportes y disparos.<br><br>
+        Dejando al margen el tipo de plataforma, se puede analizar cómo han evolucionado las ventas de cada género en los últimos años, para ver así cuál de ellos sería una buena elección para comenzar el desarrollo de un nuevo título.
+      </p>
+
+      <h2>Evolución de las ventas en los distintos mercados</h2>
+
+      <p>
+        En el siguiente gráfico se ve la evolución de las ventas de cada género en la región de Norteamérica:<br><br>
+      </p>
+
+      <a href="https://ibb.co/9bd3YJn"><img src="https://i.ibb.co/jyjZ4dh/NA-Sales-per-genre.png" alt="NA-Sales-per-genre" border="0" /></a>
+
+      <p>
+        En primer lugar, se puede sacar la conclusión de que en dicho mercado se logra un número de ventas muy elevado, siendo los juegos de acción, miscelánea y deportes los que más venden. En segundo lugar, está el género de carreras, que tiene unas ventas algo más irregulares y el de los juegos de rol, que crece de una forma no muy pronunciada pero sí estable.<br><br>
+        A continuación se muestra el mísmo gráfico para Europa, que presenta una evolución similar a la de Norteamérica, pero con unas ventas más reducidas, lo que le hace ser un mercado menos potente:
+      </p>
+
+      <a href="https://ibb.co/Y3TG1Vk"><img src="https://i.ibb.co/ZV1CFb8/EU-Sales-per-genre.png" alt="EU-Sales-per-genre" border="0"></a>
+
+      <p>
+        Tras ver el mercado europeo, se muestra el tercer mercado, que lo conforma Japón y que presenta una tendencia distinta a los anteriores. En comparación con las dos regiones anteriores, cabe decir que tiene unas ventas muy elevadas pese a lo pequeño que es el país.<br><br>
+        En Japón se vende de una forma bastante estable todo tipo de géneros, salvo el de los juegos de rol, que presenta un crecimiento y unas cifras desmesuradas en relación a los demás:
+      </p>
+
+      <a href="https://ibb.co/yVdFyLM"><img src="https://i.ibb.co/TrYM8zn/JP-Sales-per-genre.png" alt="JP-Sales-per-genre" border="0"></a>
+
+      <p>
+        Con lo visto hasta ahora, se podría decir que la "cuna" de los juegos de rol es Japón, por lo que si se optase por un juego de este tipo, habría que lanzarlo en esta región.<br><br>
+        Por último, estas serían las ventas en el resto de países:
+      </p>
+
+      <a href="https://ibb.co/WHGLQxM"><img src="https://i.ibb.co/ZfG03LF/Other-Sales-per-Genre.png" alt="Other-Sales-per-Genre" border="0"></a>
+
+      <p>
+        Indudablemente, al margen del género escogido, la calidad, originalidad y presupuesto de un videojuego, son aspectos igual de importantes a la hora de determinar el éxito que tendrá y las ventas que logrará. Pero con estos análisis se puede abordar el desarrollo con mayor seguridad.
+
+      <h2>Importancia de los mercados</h2>
+
+      <p>
+        Tras ver la evolución de las ventas en cada región, en el siguiente gráfico interactivo se puede observar el porcentaje que suponen las ventas de cada una de éstas regiones respecto al total de ventas de cada género de videojuego:
+      </p>
+
+      <iframe width="913" height="607" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQ-aAYP9VIg7N3ifExlcGHAyuTFbZQCbSjPIIY_fCoBbMG8TvphvVdBrNZPucxYZZh6g_0rmVBz2Kt/pubchart?oid=832323516&amp;format=interactive"></iframe>
+
+      <p>
+        En él se muestra de forma clara como, en la mayoría de casos, el mercado norteamericano supone la mitad de las ventas y si no, una parte muy grande de las mismas. Una importante excepción son los juegos de rol, donde el mercado japonés gana a los demás. <br><br>
+        Si se desea conocer con cifras tangibles las ventas en vez de los porcentajes, en el siguiente gráfico se muestra dicha información:
+      </p>
+
+      <iframe width="913" height="662" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQ-aAYP9VIg7N3ifExlcGHAyuTFbZQCbSjPIIY_fCoBbMG8TvphvVdBrNZPucxYZZh6g_0rmVBz2Kt/pubchart?oid=1925309397&amp;format=interactive"></iframe>
+
+      <p>
+        Debido a que con estas representaciones es compicado ver la relación entre el número de ventas en cada región y el número de juegos de cada género, se han implementado los siguientes gráficos de burbujas. Con ellos, se ve realmente qué género vende mejor en cada región respecto al número de unidades. Por ejemplo, las ventas del género acción son muy superiores a las demás, pero también se publican muchos más juegos de ese tipo, por lo que en los gráficos de barras anteriores no se refleja con exactitud la tendencia de ventas por unidad.
+      </p>
+
+      <h2>Relación del número de ventas respecto a los videojuegos que se editan</h2>
+
+      <p>
+        En el siguiente gráfico, se ven las ventas en Norteamérica de gada género respecto al número de títulos lanzados y se determina el grosor de las burbujas con la división "Ventas/número de juegos". De esta forma, los géneros de videojuego que se identifiquen con las burbujas más grandes lograrían mayores ventas con las mismas unidades que un género que se identifique con una burbuja pequeña:
+      </p>
+
+      <iframe width="913" height="564" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQ-aAYP9VIg7N3ifExlcGHAyuTFbZQCbSjPIIY_fCoBbMG8TvphvVdBrNZPucxYZZh6g_0rmVBz2Kt/pubchart?oid=65514139&amp;format=interactive"></iframe>
+
+      <p>
+        Con el gráfico se llega a la conclusión de que los géneros que mejor venden en Norteamérica son los de disparos y plataformas, al igual que pasa en el mercado europeo, aunque los juegos de carreras ganan peso en este mercado:
+      </p>
+
+      <iframe width="913" height="564" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQ-aAYP9VIg7N3ifExlcGHAyuTFbZQCbSjPIIY_fCoBbMG8TvphvVdBrNZPucxYZZh6g_0rmVBz2Kt/pubchart?oid=134121390&amp;format=interactive"></iframe>
+
+      <p>
+        En el mercado japonés, la tendencia se ve afectada por el altísimo número de ventas que suponen los juegos de rol, que podrían llegar a identificarse como un outlier. Al margen de esto, las ventas de los juegos de disparos caen en este mercado, mientras que la segunda burbuja más grande sigue siendo la de los videojuegos de plataformas:
+      </p>
+
+      <iframe width="913" height="564" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQ-aAYP9VIg7N3ifExlcGHAyuTFbZQCbSjPIIY_fCoBbMG8TvphvVdBrNZPucxYZZh6g_0rmVBz2Kt/pubchart?oid=1466967174&amp;format=interactive"></iframe>
+
+      <p>
+        Finalmente, en el resto de mercados, se recupera la tendencia de Norteamérica y Europa, salvo porque los juegos de carreras casi rivalizan con los de disparos y plataformas:
+      </p>
+
+      <iframe width="913" height="564" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQ-aAYP9VIg7N3ifExlcGHAyuTFbZQCbSjPIIY_fCoBbMG8TvphvVdBrNZPucxYZZh6g_0rmVBz2Kt/pubchart?oid=1789686463&amp;format=interactive"></iframe>
+
+      <h2>Conclusiones</h2>
+
+      <p>
+        Tras observar estas representaciones, se puede concluir que los géneros que más venden, independientemente del mercado en el que se quiera lanzar el videojuego, son los de disparos y plataformas. Sin embargo, son una apuesta segura, pese a no contar con las mismas ventas, los de carreras y rol, siendo éstos últimos un genero bastante sólido y en crecimiento en todas las regiones. <br><br>
+        A partir de la selección del género, se puede establecer la o las plataformas sobre las que se querrá ejecutar el videojuego, puesto que hay unas plataformas más orientadas a un tipo de gustos y otras cuyo perfil de consumidor difiere de las demás.
+      </p>
+    </div>
+  </body>
+</html>
